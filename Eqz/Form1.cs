@@ -47,7 +47,6 @@ namespace eQz
             }
             catch (Exception ex)
             {
-                //MessageBox.Show($"Error initializing audio capture: {ex.Message}");
                 Dispose(true);
             }
         }
