@@ -94,7 +94,7 @@ namespace eQz
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Text = " eQz [Displaying Algorithmic]";
+            this.Text = " eQz [Displaying Algorithmic Shift]";
             var sview = (SideBySideBarSeriesView)chartControl1.Series.First().SeriesView;
             chartControl1.Series.Clear();
             for (int i = 0; i < 100; i++)
@@ -143,8 +143,6 @@ namespace eQz
                 waveIn.Dispose();
             }
         }
-
-
         private float[] PerformFFT(byte[] buffer, int bytesRecorded)
         {
 
@@ -171,6 +169,7 @@ namespace eQz
                 up = true;
             }
 
+
             if (up)
             {
                 cuurValue += 0.0005d;
@@ -181,6 +180,8 @@ namespace eQz
                 cuurValue -= 0.0005d;
                 bandaV -= 0.000001d;
             }
+
+
             if (cuurValue < 2)
             {
                 if (up == true)
@@ -237,7 +238,11 @@ namespace eQz
             }
 
             return bandAverages;
-
+        }
+        private void Simplewarn()
+        { 
+        
+        
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
@@ -260,11 +265,11 @@ namespace eQz
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            var sex = Math.Round(cuurValue, 3);
+            var DIx = Math.Round(cuurValue, 3);
 
-            var sex2 = Math.Round(bandaV, 5);
+            var DIx2 = Math.Round(bandaV, 5);
             UpdateChart();
-            textEdit1.Text = $"Master Visualiser | Buffer Shift Value: {sex:n3} | Band GB Value: {gaba:n1} | Band AV Shift Value: {sex2:n5}";
+            textEdit1.Text = $"Master Visualiser | Buffer Shift Value: {DIx:n3} | Band GB Value: {gaba:n1} | Band AV Shift Value: {DIx2:n5}";
         }
 
         private void UpdateChart()
@@ -282,13 +287,22 @@ namespace eQz
         }
         private void updateGauges()
         {
+            textEdit2.Visible = false;
+            textEdit3.Visible = false;
             if (frequencyBands != null)
             {
                 for (int i = 0; i < frequencyBands.Length; i++)
                 {
                     progressBarControl1.EditValue = (frequencyBands[i] * 20);
                     progressBarControl3.EditValue = (frequencyBands[i] * (cuurValue * 30));
-
+                    if (frequencyBands[i] > 1)
+                    { 
+                    textEdit2.Visible = true;
+                    }
+                    if (frequencyBands[i] > 2)
+                    { 
+                    textEdit3.Visible = true;
+                    }
                 }
             }
         }

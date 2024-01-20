@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.RectangleGradientFillOptions rectangleGradientFillOptions1 = new DevExpress.XtraCharts.RectangleGradientFillOptions();
+            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView4 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.RectangleGradientFillOptions rectangleGradientFillOptions4 = new DevExpress.XtraCharts.RectangleGradientFillOptions();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -43,16 +43,18 @@
             this.progressBarControl3 = new DevExpress.XtraEditors.ProgressBarControl();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // chartControl1
@@ -60,53 +62,52 @@
             this.chartControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.chartControl1.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartControl1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.AxisX.ScaleBreakOptions.Style = DevExpress.XtraCharts.ScaleBreakStyle.Straight;
-            xyDiagram1.AxisX.StickToEdge = true;
-            xyDiagram1.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisX.VisualRange.Auto = false;
-            xyDiagram1.AxisX.VisualRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.VisualRange.EndSideMargin = 0D;
-            xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "98";
-            xyDiagram1.AxisX.VisualRange.MinValueSerializable = "1";
-            xyDiagram1.AxisX.VisualRange.StartSideMargin = 0D;
-            xyDiagram1.AxisX.WholeRange.Auto = false;
-            xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0D;
-            xyDiagram1.AxisX.WholeRange.MaxValueSerializable = "99";
-            xyDiagram1.AxisX.WholeRange.MinValueSerializable = "1";
-            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0D;
-            xyDiagram1.AxisY.Alignment = DevExpress.XtraCharts.AxisAlignment.Far;
-            xyDiagram1.AxisY.Logarithmic = true;
-            xyDiagram1.AxisY.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisualRange.Auto = false;
-            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "3";
-            xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0.0027";
-            xyDiagram1.AxisY.WholeRange.Auto = false;
-            xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "3";
-            xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0.0001";
-            xyDiagram1.DefaultPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram4.AxisX.ScaleBreakOptions.Style = DevExpress.XtraCharts.ScaleBreakStyle.Straight;
+            xyDiagram4.AxisX.StickToEdge = true;
+            xyDiagram4.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram4.AxisX.VisualRange.Auto = false;
+            xyDiagram4.AxisX.VisualRange.AutoSideMargins = false;
+            xyDiagram4.AxisX.VisualRange.EndSideMargin = 0D;
+            xyDiagram4.AxisX.VisualRange.MaxValueSerializable = "98";
+            xyDiagram4.AxisX.VisualRange.MinValueSerializable = "1";
+            xyDiagram4.AxisX.VisualRange.StartSideMargin = 0D;
+            xyDiagram4.AxisX.WholeRange.Auto = false;
+            xyDiagram4.AxisX.WholeRange.AutoSideMargins = false;
+            xyDiagram4.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram4.AxisX.WholeRange.MaxValueSerializable = "99";
+            xyDiagram4.AxisX.WholeRange.MinValueSerializable = "1";
+            xyDiagram4.AxisX.WholeRange.StartSideMargin = 0D;
+            xyDiagram4.AxisY.Alignment = DevExpress.XtraCharts.AxisAlignment.Far;
+            xyDiagram4.AxisY.Logarithmic = true;
+            xyDiagram4.AxisY.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
+            xyDiagram4.AxisY.VisualRange.Auto = false;
+            xyDiagram4.AxisY.VisualRange.MaxValueSerializable = "3";
+            xyDiagram4.AxisY.VisualRange.MinValueSerializable = "0.0027";
+            xyDiagram4.AxisY.WholeRange.Auto = false;
+            xyDiagram4.AxisY.WholeRange.MaxValueSerializable = "3";
+            xyDiagram4.AxisY.WholeRange.MinValueSerializable = "0.0001";
+            xyDiagram4.DefaultPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.chartControl1.Diagram = xyDiagram4;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.IndicatorsPaletteName = "Black and White";
             this.chartControl1.Legend.LegendID = -1;
             this.chartControl1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
-            this.chartControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Violet II";
-            series1.Name = "Series 1";
-            series1.SeriesID = 0;
-            sideBySideBarSeriesView1.BarWidth = 0.5D;
-            sideBySideBarSeriesView1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(48)))), ((int)(((byte)(160)))));
-            sideBySideBarSeriesView1.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Gradient;
-            rectangleGradientFillOptions1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(80)))));
-            sideBySideBarSeriesView1.FillStyle.Options = rectangleGradientFillOptions1;
-            series1.View = sideBySideBarSeriesView1;
+            series4.Name = "Series 1";
+            series4.SeriesID = 0;
+            sideBySideBarSeriesView4.BarWidth = 0.5D;
+            sideBySideBarSeriesView4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(48)))), ((int)(((byte)(160)))));
+            sideBySideBarSeriesView4.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Gradient;
+            rectangleGradientFillOptions4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(80)))));
+            sideBySideBarSeriesView4.FillStyle.Options = rectangleGradientFillOptions4;
+            series4.View = sideBySideBarSeriesView4;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControl1.Size = new System.Drawing.Size(2201, 718);
+        series4};
+            this.chartControl1.Size = new System.Drawing.Size(1044, 359);
             this.chartControl1.TabIndex = 2;
             // 
             // timer1
@@ -119,8 +120,7 @@
             // 
             this.textEdit1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.textEdit1.EditValue = "Master display";
-            this.textEdit1.Location = new System.Drawing.Point(0, 678);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textEdit1.Location = new System.Drawing.Point(0, 339);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,7 +128,7 @@
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.ReadOnly = true;
             this.textEdit1.Properties.UseReadOnlyAppearance = false;
-            this.textEdit1.Size = new System.Drawing.Size(2201, 40);
+            this.textEdit1.Size = new System.Drawing.Size(1044, 20);
             this.textEdit1.TabIndex = 3;
             this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
@@ -139,10 +139,9 @@
             this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(2097, 678);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton1.Location = new System.Drawing.Point(988, 339);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(104, 40);
+            this.simpleButton1.Size = new System.Drawing.Size(56, 20);
             this.simpleButton1.TabIndex = 4;
             this.simpleButton1.Text = "DEFAULT";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -151,49 +150,45 @@
             // 
             this.marqueeProgressBarControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.marqueeProgressBarControl1.EditValue = "Getting Waves";
-            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(0, 672);
-            this.marqueeProgressBarControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(0, 336);
             this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
             this.marqueeProgressBarControl1.Properties.Appearance.BackColor = System.Drawing.Color.Black;
             this.marqueeProgressBarControl1.Properties.Appearance.Font = new System.Drawing.Font("OCR A Extended", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.marqueeProgressBarControl1.Properties.MarqueeAnimationSpeed = 25;
             this.marqueeProgressBarControl1.Properties.TextOrientation = DevExpress.Utils.Drawing.TextOrientation.Horizontal;
-            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(2201, 6);
+            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(1044, 3);
             this.marqueeProgressBarControl1.TabIndex = 5;
             // 
             // progressBarControl1
             // 
             this.progressBarControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.progressBarControl1.Location = new System.Drawing.Point(2175, 0);
-            this.progressBarControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.progressBarControl1.Location = new System.Drawing.Point(1030, 0);
             this.progressBarControl1.Name = "progressBarControl1";
             this.progressBarControl1.Properties.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.progressBarControl1.Properties.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Lime;
             this.progressBarControl1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.progressBarControl1.Properties.ProgressKind = DevExpress.XtraEditors.Controls.ProgressKind.Vertical;
             this.progressBarControl1.Properties.Step = 1;
-            this.progressBarControl1.Size = new System.Drawing.Size(26, 672);
+            this.progressBarControl1.Size = new System.Drawing.Size(14, 336);
             this.progressBarControl1.TabIndex = 6;
             // 
             // progressBarControl2
             // 
             this.progressBarControl2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.progressBarControl2.Location = new System.Drawing.Point(2166, 0);
-            this.progressBarControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.progressBarControl2.Location = new System.Drawing.Point(1025, 0);
             this.progressBarControl2.Name = "progressBarControl2";
             this.progressBarControl2.Properties.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.progressBarControl2.Properties.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.progressBarControl2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.progressBarControl2.Properties.ProgressKind = DevExpress.XtraEditors.Controls.ProgressKind.Vertical;
             this.progressBarControl2.Properties.Step = 1;
-            this.progressBarControl2.Size = new System.Drawing.Size(9, 672);
+            this.progressBarControl2.Size = new System.Drawing.Size(5, 336);
             this.progressBarControl2.TabIndex = 7;
             // 
             // progressBarControl3
             // 
             this.progressBarControl3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.progressBarControl3.Location = new System.Drawing.Point(2138, 0);
-            this.progressBarControl3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.progressBarControl3.Location = new System.Drawing.Point(1010, 0);
             this.progressBarControl3.Name = "progressBarControl3";
             this.progressBarControl3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.progressBarControl3.Properties.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -201,7 +196,7 @@
             this.progressBarControl3.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.progressBarControl3.Properties.ProgressKind = DevExpress.XtraEditors.Controls.ProgressKind.Vertical;
             this.progressBarControl3.Properties.Step = 1;
-            this.progressBarControl3.Size = new System.Drawing.Size(28, 672);
+            this.progressBarControl3.Size = new System.Drawing.Size(15, 336);
             this.progressBarControl3.TabIndex = 8;
             // 
             // timer2
@@ -212,9 +207,9 @@
             // 
             // textEdit2
             // 
+            this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit2.EditValue = "OVER";
-            this.textEdit2.Location = new System.Drawing.Point(2138, -6);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textEdit2.Location = new System.Drawing.Point(1010, -2);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
@@ -222,14 +217,30 @@
             this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.textEdit2.Properties.ReadOnly = true;
-            this.textEdit2.Size = new System.Drawing.Size(63, 34);
+            this.textEdit2.Size = new System.Drawing.Size(34, 16);
             this.textEdit2.TabIndex = 9;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEdit3.EditValue = "WARN";
+            this.textEdit3.Location = new System.Drawing.Point(1010, 13);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit3.Properties.ReadOnly = true;
+            this.textEdit3.Size = new System.Drawing.Size(34, 16);
+            this.textEdit3.TabIndex = 10;
             // 
             // eQz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2201, 718);
+            this.ClientSize = new System.Drawing.Size(1044, 359);
+            this.Controls.Add(this.textEdit3);
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.progressBarControl3);
             this.Controls.Add(this.progressBarControl2);
@@ -241,15 +252,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.IconOptions.ShowIcon = false;
             this.IconOptions.SvgImage = global::eQz.Properties.Resources.electronics_volume;
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "eQz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "eQz";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).EndInit();
@@ -257,6 +268,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,6 +284,7 @@
         public DevExpress.XtraEditors.ProgressBarControl progressBarControl3;
         private System.Windows.Forms.Timer timer2;
         private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
     }
 }
 
