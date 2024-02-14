@@ -75,10 +75,10 @@ namespace eQz
                             }
 
                         })
-                        { IsBackground = false };
+                        { IsBackground = true };
                         myThread.Start();
                     }
-                    catch { Dispose(true); }
+                    catch { }
                 }
             }
             else
@@ -239,9 +239,9 @@ namespace eQz
             return bandAverages;
         }
         private void Simplewarn()
-        { 
-        
-        
+        {
+
+
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
@@ -267,10 +267,11 @@ namespace eQz
             var DIx = Math.Round(cuurValue, 3);
 
             var DIx2 = Math.Round(bandaV, 5);
+            OverdrivePart1 = Convert.ToUInt16(DIx);
             UpdateChart();
-            textEdit1.Text = $"Master Visualiser | Buffer Shift Value: {DIx:n3} | Band GB Value: {gaba:n1} | Band AV Shift Value: {DIx2:n5}";
+            memoEdit1.Text = $"{this.Text.Replace("eQz","MODE:")}\r\nBuffer Shift Value: {DIx:n3}\r\nBand GB Value: {gaba:n1}\r\nBand AV Shift Value: {DIx2:n5}\r\nOVERDRIVER: ACTIVE";
         }
-
+        public float OverdrivePart1;
         private void UpdateChart()
         {
             if (frequencyBands != null)
@@ -280,35 +281,60 @@ namespace eQz
                     chartControl1.Series[i].Points.BeginUpdate();
                     chartControl1.Series[i].Points[0].Values.SetValue(frequencyBands[i], 0);
                     chartControl1.Series[i].Points.EndUpdate();
-                  
+
                 }
             }
         }
         private void updateGauges()
         {
-            textEdit2.Visible = false;
-            textEdit3.Visible = false;
-            if (frequencyBands != null)
+            if (Default == true)
             {
-                for (int i = 0; i < frequencyBands.Length; i++)
+                labelControl4.Visible = false;
+                if (frequencyBands != null)
                 {
-                    progressBarControl1.EditValue = (frequencyBands[i] * 20);
-                    progressBarControl3.EditValue = (frequencyBands[i] * (cuurValue * 30));
-                    if (frequencyBands[i] > 1)
-                    { 
-                    textEdit2.Visible = true;
-                    }
-                    if (frequencyBands[i] > 2)
-                    { 
-                    textEdit3.Visible = true;
+                    arcScaleComponent3.Value = 20;
+                    float bassValue = frequencyBands[0];
+                    arcScaleComponent2.Value = bassValue * 5;
+                    float averageforGauge = (frequencyBands[50]) * 10;
+                    arcScaleComponent1.Value = averageforGauge;
+
+                    for (int i = 0; i < frequencyBands.Length; i++)
+                    {
+                        float overdrive = (frequencyBands[i] * 30) / OverdrivePart1;
+                        if (overdrive > 10)
+                        {
+                            arcScaleComponent3.Value += 2;
+                        }
+
+                        if (arcScaleComponent3.Value > 50)
+                        {
+                            labelControl4.Visible = true;
+                        }
                     }
                 }
+                labelControl5.Visible = false;
             }
-        }
-
+            else 
+            {
+                labelControl5.Visible = true;
+                labelControl4.Visible = false;
+                timer3.Enabled = true;
+            }
+        } 
         private void timer2_Tick(object sender, EventArgs e)
         {
             updateGauges();
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            if (Default == false)
+            {
+                arcScaleComponent1.Value -= 1;
+                arcScaleComponent2.Value -= 1;
+                arcScaleComponent3.Value -= 1;
+
+            }
         }
     }
 }
